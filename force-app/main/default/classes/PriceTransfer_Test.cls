@@ -28,7 +28,10 @@ public class PriceTransfer_Test {
     }
 
     @isTest static void TestAdditivePriceToChange(){
-        List<Additive__c> selectAdditives = [SELECT Name, Price__c FROM Additive__c WHERE Name Like 'Test additive%'];
+        List<Additive__c> selectAdditives = [SELECT Name, Price__c
+                                             FROM Additive__c
+                                             WHERE Name Like 'Test additive%'
+                                            ];
 
         for(Additive__c additive : selectAdditives){
             //change Price for additives
@@ -46,6 +49,5 @@ public class PriceTransfer_Test {
                                                                 FROM Pancake_Additive__c
                                                                ];
         System.assertEquals(9.99, pancakeAdditivesCheckPrice[0].Price__c);
-
     }
 }
