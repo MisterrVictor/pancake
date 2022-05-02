@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderItem__c</fullName>
+    <externalId>false</externalId>
+    <label>OrderItem</label>
+    <referenceTo>Order_Item__c</referenceTo>
+    <relationshipLabel>Additive_Items</relationshipLabel>
+    <relationshipName>Additive_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
